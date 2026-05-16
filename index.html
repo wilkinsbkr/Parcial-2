@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herrajes Neffer – Insumos & Servicios de Costura</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⚙</span>
+      <span class="logo-text">Herrajes <strong>Neffer</strong></span>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+      <li><a href="#servicios" class="nav-link">Servicios</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li>
+        <a href="https://wa.me/573138945337" target="_blank" class="nav-cta">
+          <i class="fab fa-whatsapp"></i> Pedir ahora
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Insumos de costura · Herrajes · Reparaciones</p>
+      <h1 class="hero-title">
+        Todo lo que tu <br />
+        <em>costura necesita</em>
+      </h1>
+      <p class="hero-sub">
+        Hilos, botones, cierres, lanas, tejidos y mucho más.<br />
+        Calidad artesanal, atención personalizada.
+      </p>
+      <div class="hero-btns">
+        <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+        <a href="https://wa.me/573138945337" target="_blank" class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="spool spool-1"></div>
+      <div class="spool spool-2"></div>
+      <div class="needle"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <div class="stats-strip">
+    <div class="stat"><span class="stat-num" data-target="200">0</span><span>+ Productos</span></div>
+    <div class="stat"><span class="stat-num" data-target="10">0</span><span>+ Años de experiencia</span></div>
+    <div class="stat"><span class="stat-num" data-target="1500">0</span><span>+ Clientes felices</span></div>
+    <div class="stat"><span class="stat-num" data-target="98">0</span><span>% Satisfacción</span></div>
+  </div>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section class="section catalog-section" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nuestros productos</p>
+        <h2 class="section-title">Catálogo</h2>
+        <p class="section-desc">Encuentra todo lo que necesitas para tus proyectos de costura y manualidades.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="hilos">Hilos</button>
+        <button class="filter-btn" data-filter="botones">Botones</button>
+        <button class="filter-btn" data-filter="cierres">Cierres</button>
+        <button class="filter-btn" data-filter="lanas">Lanas & Tejidos</button>
+        <button class="filter-btn" data-filter="herrajes">Herrajes</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+      </div>
+
+      <!-- Grid de productos -->
+      <div class="products-grid" id="products-grid">
+
+        <!-- Hilos -->
+        <div class="product-card" data-category="hilos">
+          <div class="product-img" style="background:#f0e6d3">
+            <span class="product-emoji">🧵</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Hilos</span>
+            <h3>Hilo Poliéster 40/2</h3>
+            <p>Hilo resistente para costura industrial y a mano. Disponible en más de 50 colores.</p>
+            <div class="product-footer">
+              <span class="price">Desde $2.500</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Hilo%20Poliéster" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hilos">
+          <div class="product-img" style="background:#e8f4e8">
+            <span class="product-emoji">🧵</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Hilos</span>
+            <h3>Hilo de Seda Natural</h3>
+            <p>Acabado brillante ideal para bordados finos y ropa formal.</p>
+            <div class="product-footer">
+              <span class="price">Desde $4.000</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Hilo%20de%20Seda" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hilos">
+          <div class="product-img" style="background:#fce8e8">
+            <span class="product-emoji">🪡</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Hilos</span>
+            <h3>Hilo Elástico</h3>
+            <p>Perfecto para ropa deportiva, lycra y prendas ajustables.</p>
+            <div class="product-footer">
+              <span class="price">Desde $3.500</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Hilo%20Elástico" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="product-card" data-category="botones">
+          <div class="product-img" style="background:#e8eaf6">
+            <span class="product-emoji">🔘</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Botones</span>
+            <h3>Botones de Nácar</h3>
+            <p>Elegantes botones de nácar, ideales para camisas y blusas finas.</p>
+            <div class="product-footer">
+              <span class="price">Desde $500 c/u</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Botones%20de%20Nácar" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="botones">
+          <div class="product-img" style="background:#fff3e0">
+            <span class="product-emoji">⭕</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Botones</span>
+            <h3>Botones Metálicos</h3>
+            <p>Corchetes y botones de presión en acero inoxidable para jeans y ropa de trabajo.</p>
+            <div class="product-footer">
+              <span class="price">Desde $800 c/u</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Botones%20Metálicos" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="botones">
+          <div class="product-img" style="background:#f3e5f5">
+            <span class="product-emoji">🔵</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Botones</span>
+            <h3>Botones Plásticos Decorativos</h3>
+            <p>Gran variedad de formas y colores. Ideales para manualidades y moda infantil.</p>
+            <div class="product-footer">
+              <span class="price">Desde $300 c/u</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Botones%20Decorativos" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cierres -->
+        <div class="product-card" data-category="cierres">
+          <div class="product-img" style="background:#e0f2f1">
+            <span class="product-emoji">🔒</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Cierres</span>
+            <h3>Cierre de Nylon Invisible</h3>
+            <p>Cierre invisible de alta resistencia para faldas, vestidos y pantalones.</p>
+            <div class="product-footer">
+              <span class="price">Desde $1.500</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Cierre%20Invisible" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card featured" data-category="cierres">
+          <div class="badge-featured">⭐ Popular</div>
+          <div class="product-img" style="background:#fafafa">
+            <span class="product-emoji">⬆️</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Cierres</span>
+            <h3>Corredera YKK #5</h3>
+            <p>La marca más confiable del mundo en cierres. Deslizamiento suave y larga durabilidad.</p>
+            <div class="product-footer">
+              <span class="price">Desde $2.000</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20la%20Corredera%20YKK" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cierres">
+          <div class="product-img" style="background:#e8f5e9">
+            <span class="product-emoji">🗜️</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Cierres</span>
+            <h3>Cierre Metálico Decorativo</h3>
+            <p>Cierre con diente metálico de colores dorado y plateado para bolsos y accesorios.</p>
+            <div class="product-footer">
+              <span class="price">Desde $3.500</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Cierre%20Metálico" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lanas -->
+        <div class="product-card" data-category="lanas">
+          <div class="product-img" style="background:#fff8e1">
+            <span class="product-emoji">🧶</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Lanas & Tejidos</span>
+            <h3>Lana Merino Fina</h3>
+            <p>Lana 100% natural suave al tacto. Ideal para tejido a dos agujas y crochet.</p>
+            <div class="product-footer">
+              <span class="price">Desde $8.000</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20la%20Lana%20Merino" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="lanas">
+          <div class="product-img" style="background:#fce4ec">
+            <span class="product-emoji">🪢</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Lanas & Tejidos</span>
+            <h3>Hilo Acrílico Grueso</h3>
+            <p>Grueso y suave, perfecto para tejidos de invierno, bufandas y cobijas.</p>
+            <div class="product-footer">
+              <span class="price">Desde $5.500</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20Hilo%20Acrílico%20Grueso" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="lanas">
+          <div class="product-img" style="background:#e8eaf6">
+            <span class="product-emoji">🧣</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Lanas & Tejidos</span>
+            <h3>Tela Tejida Artesanal</h3>
+            <p>Metros de tela tejida a mano con diseños exclusivos. Colores y patrones variados.</p>
+            <div class="product-footer">
+              <span class="price">Desde $15.000/m</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20la%20Tela%20Tejida" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herrajes -->
+        <div class="product-card" data-category="herrajes">
+          <div class="product-img" style="background:#efebe9">
+            <span class="product-emoji">⚙️</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Herrajes</span>
+            <h3>Remaches de Metal</h3>
+            <p>Remaches dorados y plateados para jeans, bolsos y accesorios de cuero.</p>
+            <div class="product-footer">
+              <span class="price">Desde $1.200</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Remaches" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card featured" data-category="herrajes">
+          <div class="badge-featured">⭐ Popular</div>
+          <div class="product-img" style="background:#fafafa">
+            <span class="product-emoji">🔗</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Herrajes</span>
+            <h3>Argollas & Pasadores</h3>
+            <p>Set de argollas, pasadores y hebillas para cinturones, bolsos y calzado.</p>
+            <div class="product-footer">
+              <span class="price">Desde $2.800</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20las%20Argollas%20y%20Pasadores" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="herrajes">
+          <div class="product-img" style="background:#e3f2fd">
+            <span class="product-emoji">🪝</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Herrajes</span>
+            <h3>Ganchos y Corchetes</h3>
+            <p>Ganchos para blusas, vestidos y faldas en variedad de tallas y acabados.</p>
+            <div class="product-footer">
+              <span class="price">Desde $600 c/u</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Ganchos" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="product-card" data-category="accesorios">
+          <div class="product-img" style="background:#f9fbe7">
+            <span class="product-emoji">✂️</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Accesorios</span>
+            <h3>Tijeras de Sastre</h3>
+            <p>Tijeras profesionales de alta precisión para corte de telas y cuero.</p>
+            <div class="product-footer">
+              <span class="price">Desde $18.000</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20las%20Tijeras%20de%20Sastre" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accesorios">
+          <div class="product-img" style="background:#fce8f3">
+            <span class="product-emoji">📐</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Accesorios</span>
+            <h3>Entretela Termoadhesiva</h3>
+            <p>Entretela para dar estructura y forma a cuellos, puños y refuerzos.</p>
+            <div class="product-footer">
+              <span class="price">Desde $6.000/m</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20la%20Entretela" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="accesorios">
+          <div class="product-img" style="background:#e8f5e9">
+            <span class="product-emoji">🪡</span>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Accesorios</span>
+            <h3>Agujas Universales</h3>
+            <p>Set de agujas de costura a mano y para máquina, tallas surtidas.</p>
+            <div class="product-footer">
+              <span class="price">Desde $1.000</span>
+              <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20las%20Agujas" target="_blank" class="btn-card">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /products-grid -->
+
+      <div class="catalog-cta">
+        <p>¿No encuentras lo que buscas? Escríbenos directamente</p>
+        <a href="https://wa.me/573138945337?text=Hola!%20Busco%20un%20producto%20específico..." target="_blank" class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Consultar disponibilidad
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Lo que hacemos</p>
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-desc">Más que insumos — te ayudamos a dar vida a tus prendas.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🧶</div>
+          <h3>Tejido a Mano</h3>
+          <p>Creamos prendas tejidas personalizadas: suéteres, gorros, bufandas, cobijas y más. Diseña el tuyo con nosotros.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20servicio%20de%20Tejido%20a%20Mano" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="service-card featured-service">
+          <div class="service-badge">Más solicitado</div>
+          <div class="service-icon">👗</div>
+          <h3>Reparación de Ropa</h3>
+          <p>Arreglamos cremalleras, botones, costuras abiertas, ruedos y todo tipo de daños en tus prendas favoritas.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Necesito%20reparar%20una%20prenda" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✂️</div>
+          <h3>Confección a Medida</h3>
+          <p>Hacemos piezas desde cero según tus medidas y diseño. Ropa casual, uniforme o especial para eventos.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20una%20Confección%20a%20Medida" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔄</div>
+          <h3>Cambio de Cierres</h3>
+          <p>Reemplazamos cierres dañados en bolsos, chaquetas, jeans y más. Rápido, económico y garantizado.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Necesito%20cambiar%20un%20cierre" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📏</div>
+          <h3>Ajuste y Transformación</h3>
+          <p>Ajustamos tallas, modificamos diseños y transformamos prendas viejas en piezas nuevas y modernas.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesa%20el%20servicio%20de%20Ajuste" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Bordados Personalizados</h3>
+          <p>Agregamos nombres, logos o diseños bordados a camisetas, gorras, uniformes y más.</p>
+          <a href="https://wa.me/573138945337?text=Hola!%20Me%20interesan%20los%20Bordados%20Personalizados" target="_blank" class="service-btn">Solicitar <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section contact-section" id="contacto">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <p class="section-eyebrow">¿Hablamos?</p>
+        <h2 class="section-title white">Contáctanos</h2>
+        <p class="contact-desc">Estamos listos para atenderte y resolver todas tus dudas sobre productos y servicios.</p>
+
+        <div class="contact-links">
+          <a href="https://wa.me/573138945337" target="_blank" class="contact-link wa-link">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <span class="cl-label">WhatsApp directo</span>
+              <span class="cl-value">+57 313 8945337</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/herrajes_neffer/" target="_blank" class="contact-link ig-link">
+            <i class="fab fa-instagram"></i>
+            <div>
+              <span class="cl-label">Instagram</span>
+              <span class="cl-value">@herrajes_neffer</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3>Envíanos un mensaje</h3>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            <span class="error-msg" id="error-nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required />
+            <span class="error-msg" id="error-telefono"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">¿En qué te podemos ayudar?</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas..." required></textarea>
+            <span class="error-msg" id="error-mensaje"></span>
+          </div>
+          <button type="submit" class="btn btn-submit">
+            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+          </button>
+          <p class="form-note" id="form-success" style="display:none;">✅ ¡Mensaje enviado! Te redirigiremos a WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚙</span>
+        <span class="logo-text">Herrajes <strong>Neffer</strong></span>
+        <p>Calidad, tradición y atención personalizada en cada insumo.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://wa.me/573138945337" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/herrajes_neffer/" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-phone">📞 +57 313 8945337</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Herrajes Neffer · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="float-btns">
+    <a href="https://wa.me/573138945337" target="_blank" class="float-btn float-wa" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/herrajes_neffer/" target="_blank" class="float-btn float-ig" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
