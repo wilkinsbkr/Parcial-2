@@ -15,19 +15,58 @@ window.addEventListener('scroll', () => {
   if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
 });
 
+// Menú móvil profesional: botón de cerrar, overlay, bloqueo de scroll y cierre con ESC.
+let navBackdrop = null;
+let mobileCloseBtn = null;
+
+function ensureMobileMenuHelpers() {
+  if (!navBackdrop) {
+    navBackdrop = document.createElement('button');
+    navBackdrop.className = 'nav-backdrop';
+    navBackdrop.type = 'button';
+    navBackdrop.setAttribute('aria-label', 'Cerrar menú');
+    document.body.appendChild(navBackdrop);
+    navBackdrop.addEventListener('click', closeMobileMenu);
+  }
+  if (navLinks && !mobileCloseBtn) {
+    mobileCloseBtn = document.createElement('button');
+    mobileCloseBtn.className = 'mobile-menu-close';
+    mobileCloseBtn.type = 'button';
+    mobileCloseBtn.setAttribute('aria-label', 'Cerrar menú');
+    mobileCloseBtn.innerHTML = '<span>Menú</span><strong>&times;</strong>';
+    navLinks.prepend(mobileCloseBtn);
+    mobileCloseBtn.addEventListener('click', closeMobileMenu);
+  }
+}
+function openMobileMenu() {
+  ensureMobileMenuHelpers();
+  hamburger?.classList.add('open');
+  navLinks?.classList.add('open');
+  navBackdrop?.classList.add('show');
+  document.body.classList.add('menu-open');
+  hamburger?.setAttribute('aria-expanded', 'true');
+}
+function closeMobileMenu() {
+  hamburger?.classList.remove('open');
+  navLinks?.classList.remove('open');
+  navBackdrop?.classList.remove('show');
+  document.body.classList.remove('menu-open');
+  hamburger?.setAttribute('aria-expanded', 'false');
+}
+
 if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
+  hamburger.setAttribute('aria-controls', 'nav-links');
+  hamburger.setAttribute('aria-expanded', 'false');
+  ensureMobileMenuHelpers();
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
   });
-  $$('.nav-link').forEach(link => link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  }));
-  document.addEventListener('click', (e) => {
-    if (navbar && !navbar.contains(e.target)) {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
+  $$('.nav-link, .nav-cta').forEach(link => link.addEventListener('click', closeMobileMenu));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+      closeCart();
     }
   });
 }
@@ -149,8 +188,8 @@ function totals() {
   const points = Math.floor(total / POINTS_PER_COP);
   return { subtotal, discount, total, points };
 }
-function openCart() { if (cartDrawer) { cartDrawer.classList.add('open'); cartDrawer.setAttribute('aria-hidden','false'); } }
-function closeCart() { if (cartDrawer) { cartDrawer.classList.remove('open'); cartDrawer.setAttribute('aria-hidden','true'); } }
+function openCart() { if (cartDrawer) { cartDrawer.classList.add('open'); cartDrawer.setAttribute('aria-hidden','false'); document.body.classList.add('cart-open'); } }
+function closeCart() { if (cartDrawer) { cartDrawer.classList.remove('open'); cartDrawer.setAttribute('aria-hidden','true'); document.body.classList.remove('cart-open'); } }
 function toast(message) {
   let t = $('#cart-toast');
   if (!t) { t = document.createElement('div'); t.id = 'cart-toast'; t.className = 'cart-toast'; document.body.appendChild(t); }
@@ -255,6 +294,25 @@ if (form) {
     setTimeout(() => { if (success) success.style.display = 'none'; }, 2000);
   });
 }
+
+
+// Marca el enlace activo según página/sección visible.
+const navAnchors = $$('.nav-link');
+function setActiveNav() {
+  const path = window.location.pathname.split('/').pop() || 'index.html';
+  if (path.includes('catalogo')) {
+    navAnchors.forEach(a => a.classList.toggle('active-link', a.getAttribute('href')?.includes('catalogo')));
+    return;
+  }
+  const sections = ['inicio','ofertas','servicios','contacto'];
+  const current = sections.findLast?.(id => {
+    const el = document.getElementById(id);
+    return el && el.getBoundingClientRect().top <= 120;
+  }) || 'inicio';
+  navAnchors.forEach(a => a.classList.toggle('active-link', a.getAttribute('href') === `#${current}`));
+}
+window.addEventListener('scroll', setActiveNav, { passive: true });
+setActiveNav();
 
 renderCart();
 console.log('%c⚙ Herrajes Neffer ecommerce listo', 'color:#c9a84c;font-size:18px;font-weight:bold;');
