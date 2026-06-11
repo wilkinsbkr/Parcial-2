@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Catálogo – Herrajes Neffer</title><link rel="stylesheet" href="styles.css" /><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /></head><body><nav class="navbar" id="navbar"><a class="nav-logo" href="index.html#inicio"><span class="logo-icon">⚙</span><span class="logo-text">Herrajes <strong>Neffer</strong></span></a><button class="hamburger" id="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button><ul class="nav-links" id="nav-links"><li><a href="index.html#inicio" class="nav-link">Inicio</a></li><li><a href="catalogo.html" class="nav-link active-link">Catálogo</a></li><li><a href="index.html#ofertas" class="nav-link">Ofertas</a></li><li><a href="index.html#servicios" class="nav-link">Servicios</a></li><li><a href="index.html#contacto" class="nav-link">Contacto</a></li><li><button class="nav-cart-btn" id="open-cart" type="button" aria-label="Abrir carrito"><i class="fa-solid fa-cart-shopping"></i><span>Carrito</span><strong id="cart-count">0</strong></button></li><li><a href="https://wa.me/573138945337" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> Pedir ahora</a></li></ul></nav>
+<section class="catalog-hero"><div class="container"><p class="hero-eyebrow">Catálogo completo</p><h1>Arma tu pedido sin interrupciones</h1><p>Busca, filtra, agrega al carrito y finaliza por WhatsApp cuando estés listo.</p><div class="catalog-search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="product-search" placeholder="Buscar: argolla, cierre, reata, botón..." /></div></div></section>
+<section class="section catalog-section catalog-page" id="catalogo"><div class="container"><div class="catalog-tools"><div class="filter-bar" id="filter-bar"><button class="filter-btn active" data-filter="all">Todos</button><button class="filter-btn" data-filter="hilos">Hilos</button><button class="filter-btn" data-filter="botones">Botones</button><button class="filter-btn" data-filter="cierres">Cierres</button><button class="filter-btn" data-filter="herrajes">Herrajes</button><button class="filter-btn" data-filter="lanas">Lanas & Tejidos</button><button class="filter-btn" data-filter="accesorios">Accesorios</button><button class="filter-btn" data-filter="cintas">Cintas & Reatas</button><button class="filter-btn" data-filter="bisuteria">Bisutería</button></div><p class="catalog-count" id="catalog-count"></p></div><div class="products-grid" id="products-grid"><div class="product-card" data-category="hilos" data-name="hilo poliéster 40/2">
+      <div class="product-img" style="background:#f0e6d3"><span class="product-emoji">🧵</span></div>
+      <div class="product-info"><span class="product-tag">Hilos</span><h3>Hilo Poliéster 40/2</h3><p>Hilo resistente para costura industrial y a mano. Disponible en colores básicos y surtidos.</p>
+      <div class="product-footer"><span class="price">Desde $2.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="hilos" data-name="hilo de seda natural">
+      <div class="product-img" style="background:#e8f4e8"><span class="product-emoji">🧵</span></div>
+      <div class="product-info"><span class="product-tag">Hilos</span><h3>Hilo de Seda Natural</h3><p>Acabado brillante para bordados finos. ropa formal y detalles delicados.</p>
+      <div class="product-footer"><span class="price">Desde $4.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="hilos" data-name="hilo elástico">
+      <div class="product-img" style="background:#fce8e8"><span class="product-emoji">🪡</span></div>
+      <div class="product-info"><span class="product-tag">Hilos</span><h3>Hilo Elástico</h3><p>Ideal para prendas ajustables. lycra. ropa deportiva y terminados flexibles.</p>
+      <div class="product-footer"><span class="price">Desde $3.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="hilos" data-name="cordón encerado">
+      <div class="product-img" style="background:#fff3e0"><span class="product-emoji">🧵</span></div>
+      <div class="product-info"><span class="product-tag">Hilos</span><h3>Cordón Encerado</h3><p>Cordón para pulseras. bisutería. cuero. amarrados decorativos y manualidades.</p>
+      <div class="product-footer"><span class="price">Desde $1.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="botones" data-name="botones de nácar">
+      <div class="product-img" style="background:#e8eaf6"><span class="product-emoji">🔘</span></div>
+      <div class="product-info"><span class="product-tag">Botones</span><h3>Botones de Nácar</h3><p>Botones elegantes para camisas. blusas y prendas finas.</p>
+      <div class="product-footer"><span class="price">Desde $500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="botones" data-name="botones metálicos">
+      <div class="product-img" style="background:#fff3e0"><span class="product-emoji">⭕</span></div>
+      <div class="product-info"><span class="product-tag">Botones</span><h3>Botones Metálicos</h3><p>Botones y broches de presión para jeans. chaquetas y ropa de trabajo.</p>
+      <div class="product-footer"><span class="price">Desde $800</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="botones" data-name="botones plásticos decorativos">
+      <div class="product-img" style="background:#f3e5f5"><span class="product-emoji">🔵</span></div>
+      <div class="product-info"><span class="product-tag">Botones</span><h3>Botones Plásticos Decorativos</h3><p>Variedad de formas y colores para manualidades y moda infantil.</p>
+      <div class="product-footer"><span class="price">Desde $300</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="botones" data-name="broche tipo jean">
+      <div class="product-img" style="background:#ede7f6"><span class="product-emoji">🧷</span></div>
+      <div class="product-info"><span class="product-tag">Botones</span><h3>Broche Tipo Jean</h3><p>Broche metálico resistente para prendas denim y chaquetas.</p>
+      <div class="product-footer"><span class="price">Desde $1.200</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cierres" data-name="cierre invisible nylon">
+      <div class="product-img" style="background:#e0f2f1"><span class="product-emoji">🔒</span></div>
+      <div class="product-info"><span class="product-tag">Cierres</span><h3>Cierre Invisible Nylon</h3><p>Cierre de alta resistencia para faldas. vestidos y pantalones.</p>
+      <div class="product-footer"><span class="price">Desde $1.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="cierres" data-name="corredera ykk #5">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#fafafa"><span class="product-emoji">⬆️</span></div>
+      <div class="product-info"><span class="product-tag">Cierres</span><h3>Corredera YKK #5</h3><p>Corredera de deslizamiento suave para bolsos. chaquetas y cierres resistentes.</p>
+      <div class="product-footer"><span class="price">Desde $2.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cierres" data-name="cierre metálico decorativo">
+      <div class="product-img" style="background:#e8f5e9"><span class="product-emoji">🗜️</span></div>
+      <div class="product-info"><span class="product-tag">Cierres</span><h3>Cierre Metálico Decorativo</h3><p>Cierre con diente metálico en acabados dorado y plateado.</p>
+      <div class="product-footer"><span class="price">Desde $3.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cierres" data-name="cierre separador chaqueta">
+      <div class="product-img" style="background:#e3f2fd"><span class="product-emoji">🧥</span></div>
+      <div class="product-info"><span class="product-tag">Cierres</span><h3>Cierre Separador Chaqueta</h3><p>Cierre largo para chaquetas. chalecos. morrales y prendas gruesas.</p>
+      <div class="product-footer"><span class="price">Desde $6.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="lanas" data-name="lana merino fina">
+      <div class="product-img" style="background:#fff8e1"><span class="product-emoji">🧶</span></div>
+      <div class="product-info"><span class="product-tag">Lanas & Tejidos</span><h3>Lana Merino Fina</h3><p>Lana suave para tejido a dos agujas. crochet y prendas delicadas.</p>
+      <div class="product-footer"><span class="price">Desde $8.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="lanas" data-name="hilo acrílico grueso">
+      <div class="product-img" style="background:#fce4ec"><span class="product-emoji">🪢</span></div>
+      <div class="product-info"><span class="product-tag">Lanas & Tejidos</span><h3>Hilo Acrílico Grueso</h3><p>Ideal para bufandas. cobijas. gorros y proyectos de invierno.</p>
+      <div class="product-footer"><span class="price">Desde $5.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="lanas" data-name="tela tejida artesanal">
+      <div class="product-img" style="background:#e8eaf6"><span class="product-emoji">🧣</span></div>
+      <div class="product-info"><span class="product-tag">Lanas & Tejidos</span><h3>Tela Tejida Artesanal</h3><p>Tela tejida para prendas. decoración y piezas personalizadas.</p>
+      <div class="product-footer"><span class="price">Desde $15.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="lanas" data-name="hilaza algodón crochet">
+      <div class="product-img" style="background:#f1f8e9"><span class="product-emoji">🧶</span></div>
+      <div class="product-info"><span class="product-tag">Lanas & Tejidos</span><h3>Hilaza Algodón Crochet</h3><p>Hilaza fresca para tejidos. bolsos. blusas. caminos de mesa y decoración.</p>
+      <div class="product-footer"><span class="price">Desde $7.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="remaches de metal">
+      <div class="product-img" style="background:#efebe9"><span class="product-emoji">⚙️</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Remaches de Metal</h3><p>Remaches dorados. plateados y níquel para bolsos. jeans y accesorios.</p>
+      <div class="product-footer"><span class="price">Desde $1.200</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="herrajes" data-name="argollas &amp; pasadores">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#fafafa"><span class="product-emoji">🔗</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Argollas &amp; Pasadores</h3><p>Herrajes para cinturones. bolsos. correas. calzado y marroquinería.</p>
+      <div class="product-footer"><span class="price">Desde $2.800</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="ganchos y corchetes">
+      <div class="product-img" style="background:#e3f2fd"><span class="product-emoji">🪝</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Ganchos y Corchetes</h3><p>Ganchos para blusas. vestidos. faldas y prendas ajustables.</p>
+      <div class="product-footer"><span class="price">Desde $600</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="herrajes" data-name="ojaletes metálicos">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#f5f5f5"><span class="product-emoji">⭕</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Ojaletes Metálicos</h3><p>Ojaletes para cuero. lonas. tenis. cortinas y marroquinería.</p>
+      <div class="product-footer"><span class="price">Desde $250</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="punteras metálicas">
+      <div class="product-img" style="background:#fffde7"><span class="product-emoji">🔩</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Punteras Metálicas</h3><p>Terminales decorativas para cordones. tiras. bolsos y prendas.</p>
+      <div class="product-footer"><span class="price">Desde $250</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="mosquetón para bolso">
+      <div class="product-img" style="background:#e0f7fa"><span class="product-emoji">🧲</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Mosquetón para Bolso</h3><p>Mosquetón resistente para correas. llaveros. morrales y carteras.</p>
+      <div class="product-footer"><span class="price">Desde $1.800</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="cadena dorada por metro">
+      <div class="product-img" style="background:#fff8e1"><span class="product-emoji">⛓️</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Cadena Dorada por Metro</h3><p>Cadena decorativa para bolsos. bisutería y accesorios de moda.</p>
+      <div class="product-footer"><span class="price">Desde $4.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="herrajes" data-name="hebilla reguladora">
+      <div class="product-img" style="background:#efebe9"><span class="product-emoji">🧷</span></div>
+      <div class="product-info"><span class="product-tag">Herrajes</span><h3>Hebilla Reguladora</h3><p>Hebilla para correas. morrales. riñoneras. bolsos y cinturones.</p>
+      <div class="product-footer"><span class="price">Desde $1.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="accesorios" data-name="tijeras de sastre">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#f9fbe7"><span class="product-emoji">✂️</span></div>
+      <div class="product-info"><span class="product-tag">Accesorios</span><h3>Tijeras de Sastre</h3><p>Tijeras profesionales para corte de telas. cuero y confección.</p>
+      <div class="product-footer"><span class="price">Desde $18.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="accesorios" data-name="entretela termoadhesiva">
+      <div class="product-img" style="background:#fce8f3"><span class="product-emoji">📐</span></div>
+      <div class="product-info"><span class="product-tag">Accesorios</span><h3>Entretela Termoadhesiva</h3><p>Entretela para estructurar cuellos. puños. pretinas y refuerzos.</p>
+      <div class="product-footer"><span class="price">Desde $6.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="accesorios" data-name="agujas universales">
+      <div class="product-img" style="background:#e8f5e9"><span class="product-emoji">🪡</span></div>
+      <div class="product-info"><span class="product-tag">Accesorios</span><h3>Agujas Universales</h3><p>Set de agujas para costura a mano y máquina en tallas surtidas.</p>
+      <div class="product-footer"><span class="price">Desde $1.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="accesorios" data-name="cinta métrica flexible">
+      <div class="product-img" style="background:#e1f5fe"><span class="product-emoji">📏</span></div>
+      <div class="product-info"><span class="product-tag">Accesorios</span><h3>Cinta Métrica Flexible</h3><p>Cinta métrica para confección. patronaje. arreglos y toma de medidas.</p>
+      <div class="product-footer"><span class="price">Desde $2.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="accesorios" data-name="sacabocados manual">
+      <div class="product-img" style="background:#f3e5f5"><span class="product-emoji">🧰</span></div>
+      <div class="product-info"><span class="product-tag">Accesorios</span><h3>Sacabocados Manual</h3><p>Herramienta para perforar cuero. correas. cartón y goma.</p>
+      <div class="product-footer"><span class="price">Desde $22.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="cintas" data-name="reata poliéster 2.5 cm">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#ede7f6"><span class="product-emoji">🎗️</span></div>
+      <div class="product-info"><span class="product-tag">Cintas & Reatas</span><h3>Reata Poliéster 2.5 cm</h3><p>Reata fuerte para bolsos. morrales. correas y manualidades.</p>
+      <div class="product-footer"><span class="price">Desde $2.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cintas" data-name="cinta satín decorativa">
+      <div class="product-img" style="background:#fce4ec"><span class="product-emoji">🎀</span></div>
+      <div class="product-info"><span class="product-tag">Cintas & Reatas</span><h3>Cinta Satín Decorativa</h3><p>Cinta para empaques. moños. decoración. flores y detalles.</p>
+      <div class="product-footer"><span class="price">Desde $1.200</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cintas" data-name="sesgo de algodón">
+      <div class="product-img" style="background:#e8f5e9"><span class="product-emoji">🧵</span></div>
+      <div class="product-info"><span class="product-tag">Cintas & Reatas</span><h3>Sesgo de Algodón</h3><p>Sesgo para terminados de prendas. manteles. uniformes y bordes.</p>
+      <div class="product-footer"><span class="price">Desde $1.800</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cintas" data-name="elástico plano">
+      <div class="product-img" style="background:#f1f8e9"><span class="product-emoji">➰</span></div>
+      <div class="product-info"><span class="product-tag">Cintas & Reatas</span><h3>Elástico Plano</h3><p>Elástico para ropa interior. faldas. sudaderas. tapabocas y ajustes.</p>
+      <div class="product-footer"><span class="price">Desde $1.300</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="cintas" data-name="cordón cola de ratón">
+      <div class="product-img" style="background:#fff3e0"><span class="product-emoji">🪢</span></div>
+      <div class="product-info"><span class="product-tag">Cintas & Reatas</span><h3>Cordón Cola de Ratón</h3><p>Cordón brillante para accesorios. bisutería. recordatorios y decoración.</p>
+      <div class="product-footer"><span class="price">Desde $1.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="bisuteria" data-name="argolla para llavero">
+      <div class="product-img" style="background:#f5f5f5"><span class="product-emoji">📿</span></div>
+      <div class="product-info"><span class="product-tag">Bisutería</span><h3>Argolla para Llavero</h3><p>Argolla metálica para llaveros. dijes. manualidades y recuerdos.</p>
+      <div class="product-footer"><span class="price">Desde $1.500</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="bisuteria" data-name="dije metálico decorativo">
+      <div class="product-img" style="background:#e8eaf6"><span class="product-emoji">💎</span></div>
+      <div class="product-info"><span class="product-tag">Bisutería</span><h3>Dije Metálico Decorativo</h3><p>Dije pequeño para pulseras. collares. llaveros y detalles personalizados.</p>
+      <div class="product-footer"><span class="price">Desde $1.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card featured" data-category="bisuteria" data-name="perlas acrílicas surtidas">
+      <div class="badge-featured">⭐ Popular</div><div class="product-img" style="background:#fce4ec"><span class="product-emoji">🔮</span></div>
+      <div class="product-info"><span class="product-tag">Bisutería</span><h3>Perlas Acrílicas Surtidas</h3><p>Perlas para pulseras. collares. bordados y proyectos artesanales.</p>
+      <div class="product-footer"><span class="price">Desde $3.000</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="bisuteria" data-name="separadores para pulsera">
+      <div class="product-img" style="background:#e0f7fa"><span class="product-emoji">🧿</span></div>
+      <div class="product-info"><span class="product-tag">Bisutería</span><h3>Separadores para Pulsera</h3><p>Separadores metálicos para bisutería. manillas y accesorios personalizados.</p>
+      <div class="product-footer"><span class="price">Desde $800</span><a href="#" class="btn-card">Agregar</a></div></div></div>
+<div class="product-card" data-category="bisuteria" data-name="gancho para arete">
+      <div class="product-img" style="background:#fffde7"><span class="product-emoji">📎</span></div>
+      <div class="product-info"><span class="product-tag">Bisutería</span><h3>Gancho para Arete</h3><p>Insumo básico para armado de aretes. accesorios y bisutería fina.</p>
+      <div class="product-footer"><span class="price">Desde $500</span><a href="#" class="btn-card">Agregar</a></div></div></div></div><div class="catalog-cta"><p>¿No encuentras una referencia? Escríbenos y la buscamos por ti.</p><a href="https://wa.me/573138945337?text=Hola!%20Busco%20un%20producto%20específico..." target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Consultar disponibilidad</a></div></div></section>
+<section class="section offers-section compact-offers"><div class="container"><div class="offers-grid"><article class="offer-card main-offer"><span class="offer-kicker">Beneficio activo</span><h3>5% OFF desde $50.000</h3><p>Agrega productos al carrito y el descuento se calcula solo.</p></article><article class="offer-card"><span class="offer-icon">🎁</span><h3>Puntos por compra</h3><p>1 punto por cada $1.000 COP comprados.</p></article><article class="offer-card"><span class="offer-icon">💳</span><h3>Pago flexible</h3><p>Solicita link de pago, transferencia o confirma por WhatsApp.</p></article></div></div></section>
+<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><span class="logo-icon">⚙</span><span class="logo-text">Herrajes <strong>Neffer</strong></span><p>Calidad, tradición y atención personalizada en cada insumo.</p></div><div class="footer-links"><h4>Navegación</h4><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="catalogo.html">Catálogo</a></li><li><a href="index.html#ofertas">Ofertas</a></li><li><a href="index.html#servicios">Servicios</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></div><div class="footer-social"><h4>Síguenos</h4><div class="social-icons"><a href="https://wa.me/573138945337" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a><a href="https://www.instagram.com/herrajes_neffer/" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a></div><p class="footer-phone">📞 +57 313 8945337</p></div></div><div class="footer-bottom"><p>© 2026 Herrajes Neffer · Todos los derechos reservados</p></div></footer><div class="float-btns"><a href="https://wa.me/573138945337" target="_blank" class="float-btn float-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a><button class="float-btn float-cart" id="open-cart-float" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></button></div>
+  <!-- ===== CARRITO / CHECKOUT ===== -->
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-head"><div><p class="section-eyebrow">Tu pedido</p><h2>Carrito de compras</h2></div><button class="cart-close" id="close-cart" type="button" aria-label="Cerrar carrito">&times;</button></div>
+      <div class="cart-items" id="cart-items"><p class="empty-cart">Tu carrito está vacío. Agrega productos del catálogo.</p></div>
+      <div class="cart-summary"><div><span>Subtotal</span><strong id="cart-subtotal">$0 COP</strong></div><div><span>Descuento 5%</span><strong id="cart-discount">-$0 COP</strong></div><div><span>Puntos estimados</span><strong id="cart-points">0 pts</strong></div><div class="cart-total"><span>Total estimado</span><strong id="cart-total">$0 COP</strong></div></div>
+      <form class="checkout-form" id="checkout-form">
+        <h3>Datos del comprador y envío</h3>
+        <div class="checkout-grid">
+          <label>Nombre completo<input type="text" id="buyer-name" required placeholder="Nombre y apellido"></label>
+          <label>WhatsApp<input type="tel" id="buyer-phone" required placeholder="+57 300 000 0000"></label>
+          <label>Ciudad<input type="text" id="buyer-city" required placeholder="Ej: Ocaña"></label>
+          <label>Barrio / Dirección<input type="text" id="buyer-address" required placeholder="Dirección de entrega"></label>
+          <label>Tipo de envío<select id="shipping-type" required><option value="Recoger en tienda">Recoger en tienda</option><option value="Domicilio urbano">Domicilio urbano</option><option value="Envío nacional">Envío nacional</option></select></label>
+          <label>Método de pago<select id="payment-method" required><option value="WhatsApp / confirmar disponibilidad">Confirmar por WhatsApp</option><option value="Link de pago Wompi">Solicitar link Wompi</option><option value="Transferencia Bancolombia">Transferencia Bancolombia</option><option value="Pago contraentrega">Pago contraentrega</option></select></label>
+        </div>
+        <label>Notas del pedido<textarea id="order-notes" rows="3" placeholder="Color, referencia, cantidad especial o indicaciones de entrega"></textarea></label>
+        <button class="btn btn-submit" type="submit"><i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp</button>
+        <p class="checkout-note">La pasarela real requiere backend y cuenta comercial. Esta versión deja listo el flujo para solicitar link Wompi, transferencia o confirmación por WhatsApp.</p>
+      </form>
+    </div>
+  </aside>
+<script src="main.js"></script></body></html>
