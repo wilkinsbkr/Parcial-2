@@ -33,7 +33,7 @@ function ensureMobileMenuHelpers() {
     mobileCloseBtn.className = 'mobile-menu-close';
     mobileCloseBtn.type = 'button';
     mobileCloseBtn.setAttribute('aria-label', 'Cerrar menú');
-    mobileCloseBtn.innerHTML = '<span>Menú</span><strong>&times;</strong>';
+    mobileCloseBtn.innerHTML = '<span>Menú</span><strong aria-hidden="true">×</strong>';
     navLinks.prepend(mobileCloseBtn);
     mobileCloseBtn.addEventListener('click', closeMobileMenu);
   }
@@ -131,12 +131,13 @@ if (revealElements.length) {
 // Catálogo: filtros + búsqueda + query param
 const filterBtns = $$('.filter-btn');
 const productCards = $$('.product-card');
-const searchInput = $('#product-search');
+const searchInputs = $$('.product-search-input');
+const searchInput = $('#product-search') || searchInputs[0];
 const catalogCount = $('#catalog-count');
 let activeFilter = 'all';
 
 function applyCatalogFilters() {
-  const query = normalize(searchInput?.value || '');
+  const query = normalize(searchInputs[0]?.value || searchInput?.value || '');
   let visible = 0;
   productCards.forEach(card => {
     const category = card.dataset.category || '';
@@ -155,7 +156,10 @@ filterBtns.forEach(btn => btn.addEventListener('click', () => {
   activeFilter = btn.dataset.filter || 'all';
   applyCatalogFilters();
 }));
-if (searchInput) searchInput.addEventListener('input', applyCatalogFilters);
+searchInputs.forEach(input => input.addEventListener('input', () => {
+  searchInputs.forEach(other => { if (other !== input) other.value = input.value; });
+  applyCatalogFilters();
+}));
 
 const params = new URLSearchParams(window.location.search);
 const catFromUrl = params.get('cat');

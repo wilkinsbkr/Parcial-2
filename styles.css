@@ -1561,3 +1561,71 @@ body.cart-open { overflow: hidden; touch-action: none; }
     content: ' →';
   }
 }
+
+
+/* === FIX DEFINITIVO MENÚ MÓVIL + BÚSQUEDA CÓMODA EN CATÁLOGO === */
+@media (max-width: 768px) {
+  /* Evita que el icono hamburguesa se convierta en una segunda X encima del menú */
+  body.menu-open .hamburger,
+  body.menu-open .hamburger.open {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .mobile-menu-close {
+    min-height: 58px;
+    padding: .35rem 0 1rem !important;
+  }
+
+  .mobile-menu-close strong {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    transform: none !important;
+  }
+
+  .nav-links.open {
+    z-index: 1003;
+  }
+}
+
+.catalog-search-inline {
+  max-width: 760px;
+  margin: 0 auto 1rem;
+  border: 1px solid rgba(201,168,76,.22);
+  box-shadow: var(--shadow-sm);
+}
+
+.catalog-search-inline input {
+  font-size: 16px;
+}
+
+.catalog-tools {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+@media (min-width: 901px) {
+  .catalog-search-inline {
+    position: sticky;
+    top: 84px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-search-inline {
+    width: 100%;
+    margin-bottom: .65rem;
+    border-radius: 14px;
+    padding: .85rem 1rem;
+  }
+
+  .catalog-tools {
+    position: sticky;
+    top: 64px;
+    z-index: 30;
+    box-shadow: 0 12px 25px rgba(0,0,0,.06);
+  }
+}
